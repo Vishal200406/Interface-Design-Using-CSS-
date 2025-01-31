@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.background-overlay {
+    background-image: url('background-image.jpg'), url('justin.jpg'); /* Replace 'your-image.jpg' with your desired image */
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.9); /* Adjust transparency of background */
+}
+
+header {
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
