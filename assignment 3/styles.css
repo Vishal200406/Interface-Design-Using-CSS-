@@ -1,0 +1,171 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f8e1d4, #f1c6d6);
+}
+
+header {
+    text-align: center;
+    background-color: #6f4c3e;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #6f4c3e;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #f1c6d6; /* Change color on hover */
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: #6f4c3e;
+    font-size: 2em; /* Increase font size */
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+.chocolate-image {
+    width: 300px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.chocolate-image:hover {
+    transform: scale(1.05); /* Scale image on hover */
+}
+
+.chocolate-variety {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #6f4c3e;
+    border-radius: 10px;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+.chocolate-variety:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.chocolate-variety img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #6f4c3e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content img.logo {
+    width: 100px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+form input:focus {
+    border-color: #6f4c3e; /* Change border color on focus */
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #f1c6d6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+form button:hover {
+    background-color: #e1b0c6; /* Change background color on hover */
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6f4c3e;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none; /* Hidden by default */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.back-to-top:hover {
+    background-color: #f1c6d6; /* Change background color on hover */
+}
+
+.review {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack navigation items on smaller screens */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
+    .chocolate-variety {
+        width: 90%; /* Make chocolate varieties take full width on small screens */
+        margin: 10px auto; /* Center align */
+    }
+}

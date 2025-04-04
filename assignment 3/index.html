@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Milk Chocolate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-background">
+        <h1>Dairy Milk Chocolate</h1>
+        <nav class="nav-background">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="varieties.html">Varieties</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Dairy Milk!</h2>
+            <p>Discover the creamy, dreamy chocolate that melts in your mouth!</p>
+            <img src="home.webp" alt="Dairy Milk Chocolate" class="chocolate-image">
+        </section>
+
+        <section id="facts">
+            <h2>Interesting Facts</h2>
+            <ul>
+                <li>Dairy Milk was first introduced in 1905 by Cadbury.</li>
+                <li>It has a higher proportion of milk than other chocolate bars.</li>
+                <li>One of the best-selling chocolate brands in the UK.</li>
+                <li>Available in various flavors like Caramel, Fruit & Nut, and more.</li>
+                <li>The iconic purple wrapper is synonymous with the brand.</li>
+            </ul>
+        </section>
+
+        <section id="nutrition">
+            <h2>Nutritional Information</h2>
+            <ul>
+                <li>Calories: 200</li>
+                <li>Fat: 12g</li>
+                <li>Sugar: 24g</li>
+                <li>Protein: 3g</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="Company logo.png" alt="Company Logo" class="logo">
+            <p>Company Name: Cadbury</p>
+            <p>Email: contact@cadbury.com</p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com/Cadbury" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/Cadbury" target="_blank">Instagram</a> |
+                <a href="https://www.twitter.com/Cadbury" target="_blank">Twitter</a>
+            </p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top">Back to Top</a>
+
+    <script>
+        window.onscroll = function () {
+            const button = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
